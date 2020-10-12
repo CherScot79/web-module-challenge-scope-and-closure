@@ -63,8 +63,18 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+The closure is "console.log(`${name} rolled a ${newRoll}`)". The way I can tell is the empty return function does not call on the "name" so the function has to look outside to find the information for name.
+
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+dansRoll is a constant variable assigned to 'name', so it will not change, as opposed to newRoll is assigned to the formula of "Math.floor(Math.random() * 6)", which produces random numbers. In other words, both variables are constant, but the newRoll will be constant in it's name of newRoll, but it will constantly produce random outputs.
+
+
 c. What is the lexical scope of `newRoll`? 
+
+The lexical scope 'belongs' to the empty return function it is declared within that function thus works within said function.
 
 ### Task 2c - Exit Ticket
 
